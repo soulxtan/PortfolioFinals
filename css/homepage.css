@@ -1,0 +1,223 @@
+  html {
+  scroll-behavior: smooth;
+  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+.container, .section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.section {
+  opacity: 0; 
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.container::before, .section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+}
+.container::before {
+  background: url('../images/face.jpg') no-repeat center/cover;
+}
+
+#overview::before {
+  background: url('../images/overview-bg.jpg') no-repeat center/cover;
+}
+
+#services::before {
+  background: url('../images/services-bg.jpg') no-repeat center/cover;
+}
+
+#portfolio::before {
+  background: url('../images/portfolio-bg.jpg') no-repeat center/cover;
+}
+
+#contact::before {
+  background: no-repeat center/cover;
+}
+.container .hero-text, .section h3, .section p {
+  position: relative;
+  z-index: 2;
+}
+
+.container .hero-text h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.container .hero-text p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.section h3 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.section h4 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  text-align: center;
+  font-size: 25px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.section p1 {
+  text-align: center;
+  font-size: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+}
+
+.nav a {
+  margin-left: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 5px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+
+.nav a.active {
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff; 
+}
+.social-links {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 3;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #000000;
+}
+
+#portfolio .row {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  flex-wrap: wrap;
+}
+
+#portfolio .row div {
+  flex: 1 1 300px; 
+  max-width: 300px;
+}
+
+#portfolio .row img {
+  width: 100%;
+  height: auto; 
+  border-radius: 10px;
+  }
+form {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  width: 100%;
+}
+
+form input, form textarea, form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+form input, form textarea {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+}
+
+form button {
+  background: #ffffff;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #a4ff5a;
+}
+
+@media (max-width: 768px) {
+  .hero-text h2 {
+    font-size: 3rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
