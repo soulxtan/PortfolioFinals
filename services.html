@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/service.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"></div>
+            <nav class="nav">
+                <a href="homepage.html">Home</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="social-links">
+                <a href="https://www.behance.net/tantananthan" target="_blank"><i class="bi bi-behance"></i></a>
+                <a href="https://github.com" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+            </div>
+            <div class="hero-text">
+                <h2>My Services</h2>
+                <p>Services range from web development to digital marketing</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="carousel">
+        <div class="list">
+            <div class="item">
+                <img src="images/dahan.webp">
+                <div class="content">
+                    <div class="author">TCT</div>
+                    <div class="title">Services</div>
+                    <div class="topic">Music Video Thumbnails/Poster</div>
+                    <div class="des">
+                        I create eye-catching and high-quality music video thumbnails and posters that captivate audiences and enhance your visual branding. Whether you need a thumbnail for YouTube or a promotional poster for social media, we design with attention to detail, ensuring that each piece aligns with the style and mood of your music. Our goal is to visually communicate the essence of your music video, driving more views and engagement.
+                    </div>
+                    <div class="buttons">
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item-white">
+                <img src="images/VM CALLING CARD 1(FRONT).jpg">
+                <div class="content">
+                    <div class="author">TCT</div>
+                    <div class="title">Services</div>
+                    <div class="topic">Logo Commission</div>
+                    <div class="des">
+                        I specialize in creating custom logos that reflect the unique identity of your brand. Our logo design process includes in-depth research, creative brainstorming, and design iterations to ensure that the final product resonates with your target audience and strengthens your brand's presence.
+                    </div>
+                    <div class="buttons">
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/20230917-blender.jpg">
+                <div class="content">
+                    <div class="author">TCT</div>
+                    <div class="title">Services</div>
+                    <div class="topic">3D Modeling</div>
+                    <div class="des">
+                        My 3D modeling services bring your ideas to life with detailed, realistic models for a wide range of uses. Whether for animation, product visualization, or architectural designs, we focus on precision and high-quality rendering to create immersive and engaging 3D experiences.
+                    </div>
+                    <div class="buttons">
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/LOADING SCREEN.webp ">
+                <div class="content">
+                    <div class="author">TCT</div>
+                    <div class="title">Services</div>
+                    <div class="topic">UI/UX Design</div>
+                    <div class="des">
+                        Ioffer professional UI/UX design services to ensure your digital products are user-friendly, intuitive, and aesthetically pleasing. From wireframes to final prototypes, we work to deliver seamless user experiences that improve engagement and satisfaction with your brand's digital presence.
+                    </div>
+                    <div class="buttons">
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img src="images/VM CALLING CARD 1(FRONT).jpg">
+                <div class="content">
+                    <div class="title">Logo</div>
+                    <div class="description">Branding</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/dahan.webp">
+                <div class="content">
+                    <div class="title">Posters/Layout</div>
+                    <div class="description">Graphic and Layout</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/LOADING SCREEN.webp">
+                <div class="content">
+                    <div class="title">UI/UX</div>
+                    <div class="description">Front-End</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/yc.jpg">
+                <div class="content">
+                    <div class="title">Advertisements</div>
+                    <div class="description">Marketing</div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <div class="time"></div>
+    </div>
+    <div class="get-in-touch" id="contact">
+        <h2>Get in Touch</h2>
+        <p>Interested in working with me? Fill out the form below, and I'll get back to you as soon as possible!</p>
+        <form action="submit_form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <script src="service.js"></script>
+</body>
+</html>
